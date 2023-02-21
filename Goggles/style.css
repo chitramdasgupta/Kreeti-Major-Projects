@@ -1,0 +1,114 @@
+/* CSS Reset */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: black;
+  color: aliceblue;
+}
+
+img {
+  display: block;
+}
+
+/* Header */
+
+.top-banner {
+  display: flex;
+  justify-content: space-between;
+  background-color: purple;
+}
+
+.primary-navigation ul {
+  display: flex;
+  justify-content: space-between;
+  list-style-type: none;
+  background-color: steelblue;
+}
+
+.navigation-links {
+  display: flex;
+}
+
+/* Main hero image*/
+
+.hero {
+  position: relative;
+}
+
+.hero img {
+  width: 100%;
+  height: auto;
+}
+
+.top-of-hero {
+  position: absolute;
+  top: 50%;
+  left: 25%;
+  transform: translate(-25%, -50%);
+}
+
+.top-of-hero h2 {
+  display: inline-block;
+  background-color: turquoise;
+}
+
+.top-of-hero p {
+  display: inline-block;
+  background-color: rgba(244, 240, 240, 0.25);
+}
+
+/* Main showcase */
+
+.showcase {
+  margin-top: 2rem;
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  gap: 1.25rem;
+}
+
+.image-container {
+  display: flex;
+  flex-direction: column;
+  background-color: rebeccapurple;
+
+  flex-basis: 20rem;
+}
+
+.image-container img {
+  display: inline-block;
+  width: 100%;
+  height: auto;
+}
+
+/* Main ending-text */
+
+.ending-text {
+  font-weight: bold;
+  margin-left: 10%;
+  margin-right: 10%;
+}
+
+/* Aside */
+
+aside {
+  margin-top: 1rem;
+  margin-left: 10%;
+  margin-right: 10%;
+}
+
+/* Footer */
+
+footer {
+  margin-top: 1rem;
+  text-align: center;
+}
+
+footer span {
+  color: aquamarine;
+}
