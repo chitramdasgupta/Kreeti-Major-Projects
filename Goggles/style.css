@@ -1,14 +1,6 @@
 /* CSS Reset */
 
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
 body {
-  background-color: black;
-  color: aliceblue;
   font-size: 1rem;
 }
 
@@ -16,23 +8,88 @@ img {
   display: block;
 }
 
-/* Header */
+/* variables */
+
+:root {
+  /* Colors */
+  --highlight-color: rgb(7, 206, 187);
+  --highlight-white: aliceblue;
+  --dark-black: black;
+
+  /* Padding and Margin */
+  --top-banner-common-gap: 0.75rem;
+  --addtional-text-margin: 10%;
+}
+
+/* Header top banner */
 
 .top-banner {
   display: flex;
   justify-content: space-between;
-  background-color: purple;
+  flex-wrap: wrap;
+  background-color: var(--dark-black);
+  padding-bottom: 0.225rem;
+  font-size: 0.75rem;
 }
 
-.primary-navigation ul {
+.top-banner img {
+  display: inline-block;
+}
+
+.top-banner a {
+  text-decoration: none;
+  color: var(--highlight-white);
+}
+
+.contact {
   display: flex;
-  justify-content: space-between;
+  gap: var(--top-banner-common-gap);
+  margin-left: var(--top-banner-common-gap);
+}
+
+.socials ul {
   list-style-type: none;
-  background-color: steelblue;
+  display: flex;
+  gap: var(--top-banner-common-gap);
+  margin-bottom: 0;
+  margin-right: var(--top-banner-common-gap);
 }
 
-.navigation-links {
-  display: flex;
+@media only screen and (max-width: 500px) {
+  .contact-phone a {
+    display: none;
+  }
+
+  .contact-email a {
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 232px) {
+  .top-banner {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .socials ul {
+    margin: 0;
+    padding: 0;
+  }
+}
+
+/* Header navbar */
+
+.nav-link {
+  color: var(--dark-black);
+}
+
+.navbar {
+  padding: 1.5rem 0.75rem;
+}
+
+.navbar-nav {
+  margin-left: 0rem;
 }
 
 /* Main hero image*/
@@ -43,30 +100,59 @@ img {
 
 .hero img {
   width: 100%;
-  height: auto;
+  object-fit: cover;
 }
 
-.top-of-hero {
+.overlay-hero {
   position: absolute;
-  top: 50%;
-  left: 25%;
-  transform: translate(-25%, -50%);
+  top: 120px;
+  margin-inline: 8rem;
+  font-size: 1.25rem;
+  color: var(--highlight-white);
 }
 
-.top-of-hero h2 {
+.overlay-hero h2 {
   display: inline-block;
-  background-color: turquoise;
+  background-color: var(--highlight-color);
+  
+  margin-bottom: 0;
+  padding-right: 1.5rem;
+  font-size: 1.5em;
 }
 
-.top-of-hero p {
+.overlay-hero p {
   display: inline-block;
-  background-color: rgba(244, 240, 240, 0.25);
+  background-color: rgba(55, 55, 55, 0.82);
+  padding-right: 2rem;
+}
+
+@media only screen and (min-width: 970px) {
+  .hero img {
+    height: 100%;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .overlay-hero {
+    top: 10px;
+    margin-inline: 1rem;
+    font-size: 1rem;
+  }
+
+  .overlay-hero h2 {
+    padding-right: 0.5rem;
+  }
+
+  .overlay-hero p {
+    padding-right: 1rem;
+  }
 }
 
 /* Main showcase */
 
 .showcase {
-  margin-top: 2rem;
+  margin-top: 4rem;
+  margin-bottom: 2rem;
   display: flex;
   justify-content: space-evenly;
   flex-wrap: wrap;
@@ -76,7 +162,6 @@ img {
 .image-container {
   display: flex;
   flex-direction: column;
-  background-color: rebeccapurple;
 
   flex-basis: 20rem;
 }
@@ -88,37 +173,56 @@ img {
 }
 
 .showcase-text-container {
-  margin-top: 3rem;
+  margin-top: 4rem;
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+
+.showcase-text-container h2 {
+  color: var(--dark-black);
+  font-size: 2.5rem;
 }
 
 .showcase-text-container p {
   margin-top: 1.5rem;
   margin-bottom: 2rem;
+  color: gray;
 }
 
 /* Main ending-text */
 
 .ending-text {
+  font-size: 1.125rem;
+  color: var(--dark-black);
   font-weight: bold;
-  margin-left: 10%;
-  margin-right: 10%;
+  margin-inline: var(--addtional-text-margin);
+  margin-bottom: 2rem;
 }
 
 /* Aside */
 
 aside {
   margin-top: 1rem;
-  margin-left: 10%;
-  margin-right: 10%;
+  margin-inline: var(--addtional-text-margin);
+  color: var(--dark-black);
+  margin-bottom: 3rem;
+  text-align: center;
 }
 
 /* Footer */
 
 footer {
+  font-size: 0.75rem;
   margin-top: 1rem;
   text-align: center;
+  background-color: var(--dark-black);
+  color: var(--highlight-white);
+}
+
+footer p {
+  margin-bottom: 0;
 }
 
 footer span {
-  color: aquamarine;
+  color: var(--highlight-color);
 }
