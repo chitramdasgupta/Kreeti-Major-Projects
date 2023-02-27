@@ -2,6 +2,7 @@
 
 body {
   font-size: 1rem;
+  font-family: Arial, Helvetica, sans-serif;
 }
 
 img {
@@ -18,7 +19,7 @@ img {
 
   /* Padding and Margin */
   --top-banner-common-gap: 0.75rem;
-  --addtional-text-margin: 10%;
+  --addtional-text-margin: 4%;
 }
 
 /* Header top banner */
@@ -28,6 +29,7 @@ img {
   justify-content: space-between;
   flex-wrap: wrap;
   background-color: var(--dark-black);
+  padding-top: 0.225rem;
   padding-bottom: 0.225rem;
   font-size: 0.75rem;
 }
@@ -85,11 +87,12 @@ img {
 }
 
 .navbar {
-  padding: 1.5rem 0.75rem;
+  padding: 1.5rem 1rem;
 }
 
 .navbar-nav {
   margin-left: 0rem;
+  text-align: center;
 }
 
 /* Main hero image*/
@@ -100,14 +103,15 @@ img {
 
 .hero img {
   width: 100%;
-  object-fit: cover;
+  height: auto;
+  /* object-fit: cover; */
 }
 
 .overlay-hero {
   position: absolute;
-  top: 120px;
+  top: 100px;
   margin-inline: 8rem;
-  font-size: 1.25rem;
+  font-size: 0.8rem;
   color: var(--highlight-white);
 }
 
@@ -116,14 +120,22 @@ img {
   background-color: var(--highlight-color);
   
   margin-bottom: 0;
-  padding-right: 1.5rem;
+  padding-right: 2.5rem;
+  padding-left: 0.4rem;
+  padding-top: 0.4rem;
+  padding-bottom: 0.2rem;
   font-size: 1.5em;
+  font-weight: bold;
 }
 
 .overlay-hero p {
   display: inline-block;
-  background-color: rgba(55, 55, 55, 0.82);
-  padding-right: 2rem;
+  background-color: rgba(46, 46, 46, 0.82);
+  padding-right: 1rem;
+  font-size: 1.25em;
+  padding-left: 0.4rem;
+  padding-top: 0.4rem;
+  padding-bottom: 0.2rem;
 }
 
 @media only screen and (min-width: 970px) {
@@ -132,11 +144,11 @@ img {
   }
 }
 
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 800px) {
   .overlay-hero {
-    top: 10px;
+    top: 0px;
     margin-inline: 1rem;
-    font-size: 1rem;
+    font-size: 0.5rem;
   }
 
   .overlay-hero h2 {
@@ -145,6 +157,26 @@ img {
 
   .overlay-hero p {
     padding-right: 1rem;
+  }
+}
+
+@media only screen and (max-width: 800px) {
+  .overlay-hero {
+    font-size: 1rem;
+    position: static;
+    text-align: center;
+  }
+
+  .overlay-hero h2 {
+    display: block;
+    background-color: transparent;
+    color: var(--highlight-color);
+  }
+
+  .overlay-hero p {
+    display: block;
+    background-color: transparent;
+    color: rgba(46, 46, 46, 0.82);
   }
 }
 
@@ -163,7 +195,7 @@ img {
   display: flex;
   flex-direction: column;
 
-  flex-basis: 20rem;
+  flex-basis: 25rem;
 }
 
 .image-container img {
@@ -173,39 +205,53 @@ img {
 }
 
 .showcase-text-container {
-  margin-top: 4rem;
-  padding-left: 1rem;
-  padding-right: 1rem;
+  margin-top: 6.5rem;
 }
 
 .showcase-text-container h2 {
   color: var(--dark-black);
-  font-size: 2.5rem;
+  font-size: 4rem;
+  /* font-weight: 200; */
+  /* line-height: 25px; */
 }
 
 .showcase-text-container p {
-  margin-top: 1.5rem;
-  margin-bottom: 2rem;
-  color: gray;
+  line-height: 30px;
+  margin-top: 2rem;
+  margin-bottom: 0.75rem;
+}
+
+@media only screen and (max-width: 410px) {
+  .showcase-text-container {
+    margin-left: 0.5rem;
+  }
 }
 
 /* Main ending-text */
 
 .ending-text {
-  font-size: 1.125rem;
+  font-size: 1rem;
+  line-height: 35px;
   color: var(--dark-black);
-  font-weight: bold;
+  font-weight: 600;
   margin-inline: var(--addtional-text-margin);
-  margin-bottom: 2rem;
+  margin-bottom: 5rem;
+}
+
+@media only screen and (min-width: 1600px) {
+  .ending-text {
+    margin-inline: 18%;
+  }
 }
 
 /* Aside */
 
 aside {
-  margin-top: 1rem;
+  margin-top: 4rem;
+  font-weight: 200;
   margin-inline: var(--addtional-text-margin);
   color: var(--dark-black);
-  margin-bottom: 3rem;
+  margin-bottom: 3.5rem;
   text-align: center;
 }
 
@@ -213,10 +259,12 @@ aside {
 
 footer {
   font-size: 0.75rem;
-  margin-top: 1rem;
+  margin-top: 4rem;
   text-align: center;
   background-color: var(--dark-black);
   color: var(--highlight-white);
+  padding-top: 1rem;
+  padding-bottom: 1rem;
 }
 
 footer p {
