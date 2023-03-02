@@ -61,6 +61,10 @@ body {
   margin-left: var(--top-banner-common-gap);
 }
 
+.contact img {
+  margin-right: 0.125rem;
+}
+
 .socials ul {
   list-style-type: none;
   display: flex;
@@ -69,12 +73,22 @@ body {
   margin-right: var(--top-banner-common-gap);
 }
 
-@media only screen and (max-width: 500px) {
+/* @media only screen and (max-width: 500px) {
   .contact-phone a {
     display: none;
   }
 
   .contact-email a {
+    display: none;
+  }
+} */
+
+@media only screen and (max-width: 500px) {
+  .contact-phone span {
+    display: none;
+  }
+
+  .contact-email span {
     display: none;
   }
 }
@@ -153,14 +167,8 @@ body {
   line-height: 32px;
 }
 
-.overlay-hero p span {
+.overlay-hero span {
   display: block;
-}
-
-@media only screen and (min-width: 970px) {
-  .hero img {
-    height: 100%;
-  }
 }
 
 @media only screen and (max-width: 800px) {
@@ -259,17 +267,16 @@ body {
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  font-size: 1.25rem;
 }
 
 .ending-text {
   font-weight: 600;
   line-height: 35px;
   margin-inline: var(--addtional-text-margin);
-  font-size: 1.25rem;
 }
 
 .concluding-text {
-  font-size: 1.125rem;
   text-align: center;
   margin-top: 2.25rem;
   margin-inline: var(--addtional-text-margin);
