@@ -6,7 +6,6 @@ body {
 }
 
 /* variables */
-
 :root {
   /* Colors */
   --highlight-color: #41b9ba;
@@ -22,7 +21,6 @@ body {
 }
 
 /* Utility classes */
-
 .u-container {
   max-width: var(--max-container-width);
   margin: 0 auto;
@@ -48,18 +46,16 @@ body {
 }
 
 .u-container--addendum {
-  --max-container-width: 950px;
+  --max-container-width: 925px;
 }
 
 /* Header top */
-
 .top-wrapper {
   width: 100%;
   background-color: var(--dark-black);
 }
 
 /* Header contact */
-
 .contact {
   display: flex;
   gap: var(--top-common-gap);
@@ -82,7 +78,6 @@ body {
 }
 
 /* Header socials */
-
 .socials__list {
   list-style-type: none;
   display: flex;
@@ -92,7 +87,6 @@ body {
 }
 
 /* Header navbar */
-
 .nav-link {
   color: var(--dark-black);
 }
@@ -118,7 +112,6 @@ body {
 }
 
 /* Main hero image*/
-
 .hero {
   position: relative;
 }
@@ -177,15 +170,9 @@ body {
     background-color: transparent;
     color: rgba(46, 46, 46, 0.82);
   }
-
-  .hero__span {
-    background-color: transparent;
-    color: rgba(46, 46, 46, 0.82);
-  }
 }
 
 /* Main showcase */
-
 .showcase {
   display: flex;
   flex-direction: column;
@@ -195,7 +182,7 @@ body {
 }
 
 .showcase__img {
-  display: inline-block;
+  display: block;
   width: 100%;
 }
 
@@ -205,12 +192,9 @@ body {
 
 .showcase__heading {
   color: var(--dark-black);
-  /* font-size: 4.5rem; */
   font-size: 4rem;
   font-weight: 300;
-
-  padding-left: 0.375rem;
-  /* padding-right: 0.25rem; */
+  padding-left: 0.3rem;
 }
 
 .showcase__description {
@@ -218,9 +202,7 @@ body {
   line-height: 30px;
   padding-top: 1.25rem;
   padding-bottom: 0.75rem;
-
-  padding-left: 0.125rem;
-  /* padding-right: 1rem; */
+  padding-left: 0.5rem;
 }
 
 @media only screen and (max-width: 410px) {
@@ -234,14 +216,9 @@ body {
 }
 
 /* Additional text */
-
 .addendum {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
   font-size: 1.25rem;
-  margin-inline: var(--addtional-text-margin);
+  padding-inline: 0.5rem;
 }
 
 .addendum__begin-text {
@@ -255,8 +232,15 @@ body {
   line-height: 24px;
 }
 
-/* Footer */
+@media only screen and (max-width: 851px) and (min-width: 425px) {
+  .addendum {
+    width: 25rem;
+    margin: 0 auto;
+    padding: 0;
+  }
+}
 
+/* Footer */
 .footer {
   font-size: 0.75rem;
   text-align: center;
@@ -265,7 +249,7 @@ body {
   padding-top: 1rem;
   padding-bottom: 1rem;
   margin-top: 3.375rem;
-  /* margin-bottom: 0; */
+  margin-bottom: 0;
 }
 
 .footer__highlight {
