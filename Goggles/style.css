@@ -15,7 +15,7 @@ body {
 
   /* Padding and Margin */
   --top-common-gap: 0.75rem;
-  --addtional-text-margin: 3%;
+  --addtional-text-margin: 2%;
 
   /* Constant */
   --max-container-width: 1200px;
@@ -63,9 +63,6 @@ body {
 .contact {
   display: flex;
   gap: var(--top-common-gap);
-}
-
-.contact--margin-left {
   margin-left: var(--top-common-gap);
 }
 
@@ -90,9 +87,6 @@ body {
   list-style-type: none;
   display: flex;
   gap: var(--top-common-gap);
-}
-
-.socials__list--spacing {
   margin-bottom: 0;
   margin-right: var(--top-common-gap);
 }
@@ -125,9 +119,7 @@ body {
 
 /* Main hero image*/
 
-.hero {}
-
-.hero--position-relative {
+.hero {
   position: relative;
 }
 
@@ -139,9 +131,6 @@ body {
 .hero__overlay {
   font-size: 0.8rem;
   color: var(--highlight-white);
-}
-
-.hero__overlay--position {
   position: absolute;
   top: 90px;
   margin-inline: 7.5rem;
@@ -172,9 +161,6 @@ body {
   .hero__overlay {
     font-size: 1rem;
     text-align: center;
-  }
-
-  .hero__overlay--position {
     top: 0px;
     margin-inline: 1rem;
     position: static;
@@ -246,9 +232,6 @@ body {
   align-items: center;
   justify-content: center;
   font-size: 1.25rem;
-}
-
-.addendum--margin-horizontal {
   margin-inline: var(--addtional-text-margin);
 }
 
@@ -272,9 +255,6 @@ body {
   color: var(--highlight-white);
   padding-top: 1rem;
   padding-bottom: 1rem;
-}
-
-.footer--margin-top {
   margin-top: 3.375rem;
 }
 
