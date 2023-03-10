@@ -3,8 +3,7 @@
 
 body {
   font-family: "Source Sans Pro", sans-serif;
-  height: 100vh;
-}
+} 
 
 /* variables */
 :root {
@@ -37,13 +36,12 @@ body {
 }
 
 .u-container--showcase {
-  --max-container-width: 1000px;
+  --max-container-width: 950px;
   margin-top: 3.25rem;
-  margin-bottom: 2rem;
+  margin-bottom: 0.5rem;
   display: flex;
   justify-content: space-evenly;
   flex-wrap: wrap;
-  gap: 1.25rem;
 }
 
 .u-container--addendum {
@@ -184,8 +182,10 @@ body {
   display: flex;
   flex-direction: column;
   flex-basis: 25rem;
+  /*
   margin-left: 0.5rem;
   margin-right: 0.5rem;
+  */
 }
 
 .showcase__img {
@@ -195,11 +195,12 @@ body {
 
 .showcase__text {
   padding-top: 5.5rem;
+  padding-bottom: 1.5rem;
 }
 
 .showcase__heading {
   color: var(--dark-black);
-  font-size: 4rem;
+  font-size: 4.5rem;
   font-weight: 300;
   padding-left: 0.15rem;
 }
@@ -207,8 +208,7 @@ body {
 .showcase__description {
   font-weight: 400;
   line-height: 30px;
-  padding-top: 1.25rem;
-  padding-bottom: 0.8rem;
+  padding-top: 0.75rem;
   padding-left: 0.25rem;
 }
 
@@ -220,25 +220,28 @@ body {
 
 /* Addendum text */
 .addendum {
-  font-size: 1.25rem;
   padding-inline: 0.5rem;
+  margin-bottom: 4.3rem;
 }
 
 .addendum__begin-text {
+  font-size: 1.2rem;
   font-weight: 600;
-  line-height: 35px;
+  line-height: 36px;
+  word-wrap: break-word;
 }
 
 .addendum__end-text {
+  font-size: 1.125rem;
   text-align: center;
-  margin-top: 3.25rem;
+  margin-top: 2.8rem;
   line-height: 24px;
 }
 
-@media only screen and (max-width: 851px) and (min-width: 425px) {
+@media only screen and (max-width: 831px) and (min-width: 425px) {
   .addendum {
     width: 25rem;
-    margin: 0 auto;
+    margin: 0 auto 4.3rem auto;
     padding: 0;
   }
 }
@@ -249,10 +252,8 @@ body {
   text-align: center;
   background-color: var(--dark-black);
   color: var(--highlight-white);
-  padding-top: 1rem;
-  padding-bottom: 1rem;
-  margin-top: 3.75rem;
-  margin-bottom: 0;
+  padding-top: 0.6rem;
+  padding-bottom: 0.6rem;
 }
 
 .footer__highlight {
