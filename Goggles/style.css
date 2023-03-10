@@ -112,7 +112,7 @@ body {
   }
 }
 
-/* Main hero image*/
+/* Main hero */
 .hero {
   position: relative;
 }
@@ -218,7 +218,7 @@ body {
   }
 }
 
-/* Additional text */
+/* Addendum text */
 .addendum {
   font-size: 1.25rem;
   padding-inline: 0.5rem;
@@ -245,7 +245,7 @@ body {
 
 /* Footer */
 .footer {
-  font-size: 0.75rem;
+  font-size: 0.8rem;
   text-align: center;
   background-color: var(--dark-black);
   color: var(--highlight-white);
