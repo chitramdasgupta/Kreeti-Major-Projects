@@ -1,26 +1,20 @@
-/* Basic setup */
 @import url("https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@200;300;400;600&display=swap");
 
 body {
   font-family: "Source Sans Pro", sans-serif;
-} 
+}
 
-/* variables */
 :root {
-  /* Colors */
   --highlight-color: #41b9ba;
   --highlight-white: #fff;
   --dark-black: #000;
 
-  /* Padding and Margin */
   --top-common-space: 0.75rem;
   --addtional-text-margin: 2%;
 
-  /* Constant */
   --max-container-width: 1200px;
 }
 
-/* Utility classes */
 .u-container {
   max-width: var(--max-container-width);
   margin: 0 auto;
@@ -48,13 +42,11 @@ body {
   --max-container-width: 925px;
 }
 
-/* Header top */
 .top-wrapper {
   width: 100%;
   background-color: var(--dark-black);
 }
 
-/* Header contact */
 .contact {
   display: flex;
   gap: var(--top-common-space);
@@ -76,7 +68,6 @@ body {
   }
 }
 
-/* Header socials */
 .socials__list {
   list-style-type: none;
   display: flex;
@@ -85,7 +76,6 @@ body {
   margin-right: var(--top-common-space);
 }
 
-/* Header navbar */
 .nav-link {
   color: var(--dark-black);
 }
@@ -110,7 +100,6 @@ body {
   }
 }
 
-/* Main hero */
 .hero {
   position: relative;
 }
@@ -161,6 +150,7 @@ body {
   }
 
   .hero__heading {
+    padding-top: 1.5rem;
     padding-right: 0.5rem;
     background-color: transparent;
     color: var(--highlight-color);
@@ -177,15 +167,10 @@ body {
   }
 }
 
-/* Main showcase */
 .showcase {
   display: flex;
   flex-direction: column;
   flex-basis: 25rem;
-  /*
-  margin-left: 0.5rem;
-  margin-right: 0.5rem;
-  */
 }
 
 .showcase__img {
@@ -218,7 +203,6 @@ body {
   }
 }
 
-/* Addendum text */
 .addendum {
   padding-inline: 0.5rem;
   margin-bottom: 4.3rem;
@@ -246,7 +230,6 @@ body {
   }
 }
 
-/* Footer */
 .footer {
   font-size: 0.8rem;
   text-align: center;
