@@ -18,6 +18,10 @@ body {
   margin: 0 auto;
 }
 
+.u-container--overlay {
+  --max-container-width: 1050px;
+}
+
 .u-container--top {
   display: flex;
   justify-content: space-between;
