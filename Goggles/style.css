@@ -167,30 +167,30 @@ body {
   }
 }
 
-.showcase {
+.showcase-item {
   display: flex;
   flex-direction: column;
   flex-basis: 25rem;
 }
 
-.showcase__img {
+.showcase-item__img {
   display: block;
   width: 100%;
 }
 
-.showcase__text {
+.showcase-item__text {
   padding-top: 5.5rem;
   padding-bottom: 1.5rem;
 }
 
-.showcase__heading {
+.showcase-item__heading {
   color: var(--dark-black);
   font-size: 4.5rem;
   font-weight: 300;
   padding-left: 0.15rem;
 }
 
-.showcase__description {
+.showcase-item__description {
   font-weight: 400;
   line-height: 30px;
   padding-top: 0.75rem;
@@ -198,7 +198,7 @@ body {
 }
 
 @media only screen and (max-width: 410px) {
-  .showcase__img {
+  .showcase-item__img {
     height: auto;
   }
 }
