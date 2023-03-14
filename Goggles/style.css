@@ -36,6 +36,7 @@ body {
   display: flex;
   justify-content: space-evenly;
   flex-wrap: wrap;
+  gap: 0.75rem;
 }
 
 .u-container--addendum {
@@ -222,7 +223,7 @@ body {
   line-height: 24px;
 }
 
-@media only screen and (max-width: 831px) and (min-width: 425px) {
+@media only screen and (max-width: 811px) and (min-width: 425px) {
   .addendum {
     width: 25rem;
     margin: 0 auto 4.3rem auto;
