@@ -8,10 +8,8 @@ body {
   --highlight-color: #41b9ba;
   --highlight-white: #fff;
   --dark-black: #000;
-
   --top-common-space: 0.75rem;
   --addtional-text-margin: 2%;
-
   --max-container-width: 1200px;
 }
 
