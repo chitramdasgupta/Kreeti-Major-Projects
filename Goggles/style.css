@@ -99,6 +99,10 @@ body {
   margin-right: 0.9em;
 }
 
+.nav-link:hover {
+  color: var(--highlight-color);
+}
+
 .nav-item {
   font-weight: 700;
 }
