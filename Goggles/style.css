@@ -28,7 +28,7 @@ body {
   flex-wrap: wrap;
   padding-top: 0.25rem;
   padding-bottom: 0.3rem;
-  font-size: 0.75rem;
+  font-size: 0.8rem;
 }
 
 .u-container--showcase {
@@ -65,6 +65,10 @@ body {
   margin-right: 0.25rem;
 }
 
+.contact__span {
+  font-weight: 700;
+}
+
 @media only screen and (max-width: 500px) {
   .contact__span {
     display: none;
@@ -81,6 +85,8 @@ body {
 
 .nav-link {
   color: var(--dark-black);
+  font-size: 1.15rem;
+  font-weight: 700;
 }
 
 .navbar {
@@ -90,16 +96,16 @@ body {
 .navbar-nav {
   margin-left: 0;
   text-align: center;
+  margin-right: 0.9em;
 }
 
 .nav-item {
-  font-weight: bold;
+  font-weight: 700;
 }
 
 @media only screen and (min-width: 768px) {
   .nav-item {
-    padding-left: 2.75em;
-    padding-right: 1em;
+    padding-left: 3.7em;
   }
 }
 
@@ -126,7 +132,7 @@ body {
   margin-bottom: 0;
   padding: 0.4rem 2.5rem 0.2rem 0.4rem;
   font-size: 1.5em;
-  font-weight: bold;
+  font-weight: 700;
 }
 
 .hero__description {
@@ -248,7 +254,7 @@ body {
 
 @media only screen and (max-width: 500px) {
   .nav-link {
-    font-size: 0.9rem;
+    font-size: 1rem;
   }
 
   .hero__heading {
