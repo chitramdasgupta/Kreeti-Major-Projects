@@ -85,8 +85,8 @@ body {
 
 .nav-link {
   color: var(--dark-black);
-  font-size: 1.15rem;
-  font-weight: 700;
+  font-size: 1.2rem;
+  font-weight: 900;
 }
 
 .navbar {
@@ -103,13 +103,9 @@ body {
   color: var(--highlight-color);
 }
 
-.nav-item {
-  font-weight: 700;
-}
-
 @media only screen and (min-width: 768px) {
   .nav-item {
-    padding-left: 3.7em;
+    padding-left: 3.75em;
   }
 }
 
