@@ -1,135 +1,214 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Goggles</title>
 
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Goggles</title>
-
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
-    integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
-  <link rel="stylesheet" href="style.css">
-</head>
-
-<body class="d-flex flex-column min-vh-100">
-  <header>
-    <div class="top-wrapper">
-      <section class="u-container u-container--top">
-        <div class="contact">
-          <div>
-            <a href="tel:+123526356" class="contact__link"><img src="assets/phone.png" alt="Phone" class="contact__img"
-                width="18" height="19"><span class="contact__span">123-5263-56</span></a>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body class="d-flex flex-column min-vh-100">
+    <header>
+      <div class="top-wrapper">
+        <section class="u-container u-container--top">
+          <div class="contact">
+            <div>
+              <a href="tel:+123526356" class="contact__link"
+                ><img
+                  src="assets/phone.png"
+                  alt="Phone"
+                  class="contact__img"
+                  width="18"
+                  height="19"
+                /><span class="contact__span">123-5263-56</span></a
+              >
+            </div>
+            <div>
+              <a href="mailto:support@goggles.com" class="contact__link"
+                ><img
+                  src="assets/envelop.png"
+                  alt="Email"
+                  class="contact__img"
+                  width="18"
+                  height="19"
+                /><span class="contact__span">support@goggles.com</span></a
+              >
+            </div>
           </div>
-          <div>
-            <a href="mailto:support@goggles.com" class="contact__link"><img src="assets/envelop.png" alt="Email"
-                class="contact__img" width="18" height="19"><span class="contact__span">support@goggles.com</span></a>
+          <nav class="socials">
+            <ul class="socials__list">
+              <li>
+                <a href="https://facebook.com"
+                  ><img
+                    src="assets/fb.png"
+                    alt="Facebook account"
+                    width="20"
+                    height="20"
+                /></a>
+              </li>
+              <li>
+                <a href="https://google.com"
+                  ><img
+                    src="assets/google-plus.png"
+                    alt="Google plus account"
+                    width="20"
+                    height="20"
+                /></a>
+              </li>
+              <li>
+                <a href="https://twitter.com"
+                  ><img
+                    src="assets/twitter.png"
+                    alt="Twitter account"
+                    width="20"
+                    height="20"
+                /></a>
+              </li>
+              <li>
+                <a href="https://skype.com"
+                  ><img
+                    src="assets/skype.png"
+                    alt="Skype account"
+                    width="20"
+                    height="20"
+                /></a>
+              </li>
+            </ul>
+          </nav>
+        </section>
+      </div>
+      <section class="u-container">
+        <nav class="navbar navbar-expand-md">
+          <a href="#" class="navbar-brand">
+            <img
+              src="assets/logo.png"
+              alt="Goggles logo"
+              width="136"
+              height="26"
+            />
+          </a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#primary-navigation"
+          >
+            <img
+              src="assets/mob-menu.png"
+              alt="Menubar"
+              width="28"
+              height="20"
+            />
+          </button>
+          <div class="collapse navbar-collapse" id="primary-navigation">
+            <ul class="navbar-nav ms-auto">
+              <li class="nav-item">
+                <a href="#" class="nav-link">Home</a>
+              </li>
+              <li class="nav-item">
+                <a href="#" class="nav-link">About</a>
+              </li>
+              <li class="nav-item">
+                <a href="#" class="nav-link">Glasses</a>
+              </li>
+              <li class="nav-item">
+                <a href="#" class="nav-link">Contact</a>
+              </li>
+            </ul>
           </div>
-        </div>
-        <nav class="socials">
-          <ul class="socials__list">
-            <li><a href="https://facebook.com"><img src="assets/fb.png" alt="Facebook account" width="20"
-                  height="20"></a></li>
-            <li><a href="https://google.com"><img src="assets/google-plus.png" alt="Google plus account" width="20"
-                  height="20"></a></li>
-            <li><a href="https://twitter.com"><img src="assets/twitter.png" alt="Twitter account" width="20"
-                  height="20"></a></li>
-            <li><a href="https://skype.com"><img src="assets/skype.png" alt="Skype account" width="20" height="20"></a>
-            </li>
-          </ul>
         </nav>
       </section>
-    </div>
-    <section class="u-container">
-      <nav class="navbar navbar-expand-md">
-        <a href="#" class="navbar-brand">
-          <img src="assets/logo.png" alt="Goggles logo" width="136" height="26">
-        </a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#primary-navigation">
-          <img src="assets/mob-menu.png" alt="Menubar" width="28" height="20">
-        </button>
-        <div class="collapse navbar-collapse" id="primary-navigation">
-          <ul class="navbar-nav ms-auto">
-            <li class="nav-item">
-              <a href="#" class="nav-link">Home</a>
-            </li>
-            <li class="nav-item">
-              <a href="#" class="nav-link">About</a>
-            </li>
-            <li class="nav-item">
-              <a href="#" class="nav-link">Glasses</a>
-            </li>
-            <li class="nav-item">
-              <a href="#" class="nav-link">Contact</a>
-            </li>
-          </ul>
-        </div>
-      </nav>
-    </section>
-  </header>
-
-  <main>
-    <section class="hero">
-      <img src="assets/banner.jpg" alt="Banner image of a woman wearing glasses" class="hero__img" width="992"
-        height="245">
-      <div class="u-container u-container--overlay">
-        <div class="hero__overlay">
-          <h2 class="hero__heading">GOOGLES GLASSES</h2>
-          <div class="hero__description">
-            <span class="hero__span">Lorem ipsum dolor sit amet Lorem</span> <span class="hero__span">ipsum dolor sit
-              amet</span>
+    </header>
+    <main>
+      <section class="hero">
+        <img
+          src="assets/banner.jpg"
+          alt="Banner image of a woman wearing glasses"
+          class="hero__img"
+          width="992"
+          height="245"
+        />
+        <div class="u-container u-container--overlay">
+          <div class="hero__overlay">
+            <h2 class="hero__heading">GOOGLES GLASSES</h2>
+            <div class="hero__description">
+              <span class="hero__span">Lorem ipsum dolor sit amet Lorem</span>
+              <span class="hero__span">ipsum dolor sit amet</span>
+            </div>
           </div>
         </div>
-      </div>
-    </section>
-    <section class="u-container u-container--showcase">
-      <div class="showcase-item">
-        <img src="assets/photo1.jpg" alt="Photo of a bearded man wearing goggles" class="showcase-item__img" width="410"
-          height="456">
-        <div class="showcase-item__text">
-          <h2 class="showcase-item__heading">Lorem ipsum dolor</h2>
-          <p class="showcase-item__description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam tempus
-            tempus lectus, at
-            ultricies est placerat eget. Vivamus sagittis congue feugiat. Sed mollis risus sit amet orci
-            varius, et malesuada quam condimentum</p>
+      </section>
+      <section class="u-container u-container--showcase">
+        <div class="showcase-item">
+          <img
+            src="assets/photo1.jpg"
+            alt="Photo of a bearded man wearing goggles"
+            class="showcase-item__img"
+            width="410"
+            height="456"
+          />
+          <div class="showcase-item__text">
+            <h2 class="showcase-item__heading">Lorem ipsum dolor</h2>
+            <p class="showcase-item__description">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam
+              tempus tempus lectus, at ultricies est placerat eget. Vivamus
+              sagittis congue feugiat. Sed mollis risus sit amet orci varius, et
+              malesuada quam condimentum
+            </p>
+          </div>
         </div>
-      </div>
-      <div class="showcase-item">
-        <img src="assets/photo2.jpg" alt="Photo of a tattooed man wearing goggles" class="showcase-item__img"
-          width="410" height="456">
-        <div class="showcase-item__text">
-          <h2 class="showcase-item__heading">Lorem ipsum dolor</h2>
-          <p class="showcase-item__description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam tempus
-            tempus lectus, at
-            ultricies est placerat eget. Vivamus sagittis congue feugiat. Sed mollis risus sit amet orci
-            varius, et malesuada quam condimentum</p>
+        <div class="showcase-item">
+          <img
+            src="assets/photo2.jpg"
+            alt="Photo of a tattooed man wearing goggles"
+            class="showcase-item__img"
+            width="410"
+            height="456"
+          />
+          <div class="showcase-item__text">
+            <h2 class="showcase-item__heading">Lorem ipsum dolor</h2>
+            <p class="showcase-item__description">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam
+              tempus tempus lectus, at ultricies est placerat eget. Vivamus
+              sagittis congue feugiat. Sed mollis risus sit amet orci varius, et
+              malesuada quam condimentum
+            </p>
+          </div>
         </div>
+      </section>
+      <section class="u-container u-container--addendum">
+        <div class="addendum">
+          <p class="addendum__begin-text">
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sed in
+            justo convallis, fermentum metus nec, vehicula lectus. Maecenas
+            sollicitudin ac tellus quis egestas. Eitam finibus facilis nulla
+            vitae finibus. Nunc efficitur eleifend nibh.
+          </p>
+          <p class="addendum__end-text">
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam
+            tempus tempus lectus, at ultricies est placerat eget. Vivamus
+            sagittis congue feugiat. Sed molis risus sit amet orci varius, et
+            malesuada quam condimentum.
+          </p>
+        </div>
+      </section>
+    </main>
+    <footer class="footer mt-auto">
+      <div>
+        Copyright &copy; <span class="footer__highlight">Goggles</span> 2019
       </div>
-    </section>
-    <section class="u-container u-container--addendum">
-      <div class="addendum">
-        <p class="addendum__begin-text">
-          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sed in justo convallis, fermentum metus nec,
-          vehicula lectus. Maecenas sollicitudin ac tellus quis egestas. Eitam finibus facilis nulla vitae
-          finibus.
-          Nunc efficitur eleifend nibh.
-        </p>
-        <p class="addendum__end-text">
-          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam tempus tempus lectus, at ultricies est
-          placerat eget. Vivamus sagittis congue feugiat. Sed molis risus sit amet orci varius, et malesuada quam
-          condimentum.
-        </p>
-      </div>
-    </section>
-  </main>
-
-  <footer class="footer mt-auto">
-    <div>Copyright &copy; <span class="footer__highlight">Goggles</span> 2019</div>
-  </footer>
-
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
-    integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
-    crossorigin="anonymous"></script>
-</body>
-
+    </footer>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+      crossorigin="anonymous"
+    ></script>
+  </body>
 </html>
