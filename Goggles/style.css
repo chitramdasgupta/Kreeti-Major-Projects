@@ -26,9 +26,11 @@ body {
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
+  gap: 0.5rem;
   padding-top: 0.25rem;
   padding-bottom: 0.3rem;
   font-size: 0.8rem;
+  padding-inline: var(--top-common-space);
 }
 
 .u-container--showcase {
@@ -53,7 +55,6 @@ body {
 .contact {
   display: flex;
   gap: var(--top-common-space);
-  margin-left: var(--top-common-space);
 }
 
 .contact__link {
@@ -73,9 +74,10 @@ body {
   color: var(--highlight-color);
 }
 
-@media only screen and (max-width: 500px) {
-  .contact__span {
-    display: none;
+@media only screen and (max-width: 387px) {
+  .u-container--top {
+    justify-content: center;
+    align-items: center;
   }
 }
 
@@ -84,7 +86,7 @@ body {
   display: flex;
   gap: var(--top-common-space);
   margin-bottom: 0;
-  margin-right: var(--top-common-space);
+  padding-left: 0;
 }
 
 .nav-link {
@@ -110,6 +112,12 @@ body {
 @media only screen and (min-width: 768px) {
   .nav-item {
     padding-left: 3.75em;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .navbar-nav {
+    margin-right: 0;
   }
 }
 
@@ -257,6 +265,10 @@ body {
 }
 
 @media only screen and (max-width: 500px) {
+  .u-container--top {
+    font-size: 0.75rem;
+  }
+
   .nav-link {
     font-size: 1rem;
   }
