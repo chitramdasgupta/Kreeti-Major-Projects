@@ -192,6 +192,7 @@ body {
   display: flex;
   flex-direction: column;
   flex-basis: 25rem;
+  margin-inline: 0.25rem;
 }
 
 .showcase-item__img {
