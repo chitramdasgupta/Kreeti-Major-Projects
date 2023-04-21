@@ -134,8 +134,9 @@ body {
   font-size: 0.8rem;
   color: var(--highlight-white);
   position: absolute;
-  top: 90px;
-  margin-inline: 7.5rem;
+  top: 70%;
+  margin-inline: 9rem;
+  transform: translate(-1vw, -10vh);
 }
 
 .hero__heading {
@@ -159,32 +160,22 @@ body {
   display: block;
 }
 
-@media only screen and (max-width: 800px) {
+@media only screen and (max-width: 565px) {
   .hero__overlay {
-    font-size: 1rem;
-    text-align: center;
-    top: 0px;
-    margin-inline: 1rem;
-    position: static;
-    max-width: 25rem;
     margin: 0 auto;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 2.375vw;
   }
 
   .hero__heading {
-    padding-top: 1.5rem;
-    padding-right: 0.5rem;
-    background-color: transparent;
-    color: var(--highlight-color);
+    padding: 0.2rem 1.25rem 0.1rem 0.2rem;
   }
 
   .hero__description {
-    padding-right: 1rem;
-    background-color: transparent;
-    color: rgba(46, 46, 46, 0.82);
-  }
-
-  .hero__span {
-    display: inline;
+    padding: 0.2rem 0.55rem 0.15rem 0.2rem;
+    line-height: unset;
   }
 }
 
@@ -271,14 +262,6 @@ body {
 
   .nav-link {
     font-size: 1rem;
-  }
-
-  .hero__heading {
-    font-size: 1.2rem;
-  }
-
-  .hero__description {
-    font-size: 0.95rem;
   }
 
   .showcase-item__heading {
