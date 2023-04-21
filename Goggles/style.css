@@ -179,6 +179,12 @@ body {
   }
 }
 
+@media only screen and (min-width: 992px) {
+  .hero__overlay {
+    font-size: 1rem;
+  }
+}
+
 .showcase-item {
   display: flex;
   flex-direction: column;
