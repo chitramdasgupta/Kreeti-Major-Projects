@@ -134,7 +134,7 @@ body {
   font-size: 0.8rem;
   color: var(--highlight-white);
   position: absolute;
-  top: 70%;
+  top: 60%;
   margin-inline: 9rem;
   transform: translate(-1vw, -10vh);
 }
